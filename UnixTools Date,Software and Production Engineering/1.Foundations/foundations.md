@@ -8,10 +8,14 @@ ls /etc >/tmp/ls ; cat -n </tmp/ls
 如果tmp/x存在,旧的tmp/x被删除; 新的tmp/x总会被创建
 3. { echo -n 'hello '; echo world ; } >out
 out的内容: hello world
-
 ### 1.7 Scripting
 * 创建脚本
-#! hashbang
+ #! hashbang
 chmod
 * 传递参数
 * shell函数，模块化
+
+执行shell script,需要的的步骤:
+1.第一行是 #!/bin/sh
+2.把命令所在路径添加PATH环境变量
+3.给命令执行权限
