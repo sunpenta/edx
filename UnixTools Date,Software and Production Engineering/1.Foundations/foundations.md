@@ -1,3 +1,26 @@
+### 1.4 Files and directories
+* 文件和目录
+命令：
+pwd:查看
+mkdir：创建
+cd：切换
+路径 / /
+ls
+root dev lib home usr ... 常见目录
+* 操作文件
+命令：
+echo > ：输出重定向
+touch ：创建文件
+ls
+mv ：移动
+rm ：删除文件
+mkdir
+cp ：copy
+rmdir 
+* 递归:删除内容不为空的文件、目录
+-r
+-R
+-rf
 ### 1.6 Command grouping
 1. 和以下命令输出相同的是
 l s /etc | cat -n
