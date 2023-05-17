@@ -50,9 +50,9 @@ chmod
 * xargs :大数据
 * case
 ### 1.9 数据处理流程
-1. fetch
-2. select
-3. process
+1. fetching
+2. selection
+3. processing
 4. summarizing
-5. report
+5. reporting
 例子：程序员一周产量最高的日子
