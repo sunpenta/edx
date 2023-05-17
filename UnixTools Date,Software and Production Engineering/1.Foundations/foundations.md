@@ -43,12 +43,21 @@ chmod
 2.把命令所在路径添加PATH环境变量
 3.给命令执行权限
 
-### 1.8 excution control
+### 1.8 Excution control
 * for / 嵌套for
 * if / if else
 * while
 * xargs :大数据
 * case
+1. 以下命令
+if a; then 
+    b
+fi
+相当于
+a && b
+2. echo a | xargs ls 相当于
+echo a | while read i; do ls $i; done
+ls a
 ### 1.9 数据处理流程
 1. fetching
 2. selection
