@@ -42,3 +42,17 @@ chmod
 1.第一行是 #!/bin/sh
 2.把命令所在路径添加PATH环境变量
 3.给命令执行权限
+
+### 1.8 excution control
+* for
+* if / if else
+* while
+* xargs :大数据
+* case
+### 1.9 数据处理流程
+1. fetch
+2. select
+3. process
+4. sumirize
+5. report
+例子：程序员一周产量最高的日子
