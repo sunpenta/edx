@@ -44,7 +44,7 @@ chmod
 3.给命令执行权限
 
 ### 1.8 excution control
-* for
+* for / 嵌套for
 * if / if else
 * while
 * xargs :大数据
@@ -53,6 +53,6 @@ chmod
 1. fetch
 2. select
 3. process
-4. sumirize
+4. summarizing
 5. report
 例子：程序员一周产量最高的日子
