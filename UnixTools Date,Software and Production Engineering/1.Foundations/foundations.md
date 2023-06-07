@@ -44,7 +44,7 @@ chmod
 3.给命令执行权限
 
 ### 1.8 Excution control
-* for / 嵌套for
+* for / 嵌套for 例子接1.7
 * if / if else
 * while
 * xargs :大数据
@@ -59,9 +59,14 @@ a && b
 echo a | while read i; do ls $i; done
 ls a
 ### 1.9 数据处理流程
-1. fetching
-2. selection
-3. processing
-4. summarizing
-5. reporting
+1. 抓取fetch
+git log
+2. 选择select
+cut -d, -f1 :-d:设置字段分隔符<tab> -f1:?
+3. 处理process
+sort
+4. 总结summarize
+uniq
+5. 报告report
+sort -rn
 例子：程序员一周产量最高的日子
