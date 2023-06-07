@@ -47,7 +47,7 @@ curl -s --compressed https://www.spinellis.gr/unix/data/hier.txt | wc
 答案：25642
 2. What is the approximate mass (in yottagrams) of the planet identified in wikidata with the identifier Q111?
 ```bash
-curl -s "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q111" |
+curl -v -k "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q111" |
 jq -r .entities.Q111.claims.P2067[].mainsnak.datavalue.value.amount
 ```
 3. What is the easiest way to obtain data from a relational database for further processing with Unix shell tools?
@@ -152,3 +152,28 @@ ls -lR /home/joe >ls.out ; bzip2 ls.out ✅
 ls -lR /home/joe ; bzip2 -c >ls.out.bz2
 1. 使用-c 选项需要重定向到目标文件.gz/.bz2；
 2. 把ls的输出重定向到临时文件，然后作为参数传递给gzip/bzip2
+## 3. 远程主机
+1. 创建私钥/公钥对
+mkdir .ssh # 存储密钥对
+ssh-keygen
+2. 用私钥登录
+mkdir -p .ssh
+ssh hostname command
+3. 配置
+ssh -i 
+4. 使用
+hostname # 输出所在主机
+ssh hostname # 登录主机
+ssh hostname command
+5. pipe 
+tar -czf 
+ssh server dd of=
+              if=
+6. 穿越防火墙
+ssh -f -L(指定本机端口)
+ps x # 查看进程
+kill 杀死进程
+7. 同步
+两个主机目录内容同步
+rsync
+在一个主机删除
