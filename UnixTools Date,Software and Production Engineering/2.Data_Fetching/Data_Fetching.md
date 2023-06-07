@@ -204,3 +204,21 @@ telnet
 uucp
 
 rcp, rexec, rsh, telnet, uucp 是遗留的远程主机访问命令，不支持私钥授权。
+2. 以下哪个命令可以在远程主机trantor上创建一个本地文件a的副本？
+scp a trantor: ✅
+
+scp ./a trantor:a ✅
+
+scp a trantor
+
+cp a trantor:
+
+tar -cf - a | ssh trantor tar -xf - ✅
+
+ssh trantor tar -cxf - <a
+
+rsync a trantor
+
+rsync ./a trantor: ✅
+
+ssh trantor dd of=a <a ✅
