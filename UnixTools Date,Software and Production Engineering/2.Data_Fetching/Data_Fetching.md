@@ -181,9 +181,9 @@ rsync -av :
 在一个主机删除
 练习题：
 1. 下面哪个命令利用公私密钥对获取远程主机？
-cp
+cp ：本地复制
 
-exec
+exec ：本地执行
 
 git
 
@@ -203,4 +203,4 @@ telnet
 
 uucp
 
-rcp, rexec, rsh 是遗留的远程主机访问命令，不支持私钥授权。
+rcp, rexec, rsh, telnet, uucp 是遗留的远程主机访问命令，不支持私钥授权。
