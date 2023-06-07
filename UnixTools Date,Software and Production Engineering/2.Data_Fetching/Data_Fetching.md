@@ -156,24 +156,28 @@ ls -lR /home/joe ; bzip2 -c >ls.out.bz2
 1. 创建私钥/公钥对
 mkdir .ssh # 存储密钥对
 ssh-keygen
+当为远程访问获取创建公/私密钥对，私钥存储在本地主机，公钥存储在远程主机。
 2. 用私钥登录
 mkdir -p .ssh
 ssh hostname command
 3. 配置
 ssh -i 
-4. 使用
+4. 使用ssh
 hostname # 输出所在主机
 ssh hostname # 登录主机
-ssh hostname command
+ssh hostname command 
 5. pipe 
-tar -czf 
-ssh server dd of=
+tar -czf - 
+ssh server dd of= bs=1M
               if=
 6. 穿越防火墙
 ssh -f -L(指定本机端口)
 ps x # 查看进程
 kill 杀死进程
-7. 同步
+7. 同步文件
+tar,ssh 浪费时间和精力
 两个主机目录内容同步
-rsync
+rsync -av :
 在一个主机删除
+练习题：
+1. 
