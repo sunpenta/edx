@@ -179,6 +179,8 @@ tar,ssh 浪费时间和精力
 两个主机目录内容同步
 rsync -av :
 在一个主机删除
+参考资料：
+[如何安装SSH key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2)
 练习题：
 1. 下面哪个命令利用公私密钥对访问远程主机？
 cp ：本地复制
@@ -222,3 +224,7 @@ rsync a trantor
 rsync ./a trantor: ✅
 
 ssh trantor dd of=a <a ✅
+
+scp和rsync 可以复制本地文件到远程主机，主机名后面必须跟`:`。
+ssh也可以实现这个功能，当两端的程序必须是兼容的，tar传输到tar；重定向到dd，并指定为输出文件。
+3. 端口转发的作用：当使用ssh访问时，允许本地命令访问被防火墙阻断的远程主机。
